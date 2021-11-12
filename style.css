@@ -278,9 +278,14 @@ input[type=button]
 }
 .user-rev-txt
 {
-    font-size: 30px;
+    
     margin: 5px 0;
     color: #8d8d91;
+    text-align: center;
+}
+.user-rev-txt p
+{
+    font-size: 30px;
 }
 
 footer
@@ -312,6 +317,7 @@ footer
     align-items: center;
     justify-content: center;
     padding: 30px 0;
+    text-align: center;
 }
 .foot-details .catg-head
 {
@@ -326,10 +332,11 @@ footer
         height: 350px;
         width: 350px;
     }
-    .user-rev-txt
+    
+    .user-rev-txt p
 {
     width: 98%;
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px 0;
     color: #8d8d91;
 }
@@ -341,7 +348,7 @@ footer
         height: 250px;
         width: 250px;
     }
-    .user-rev-txt
+    .user-rev-txt p
 {
     width: 98%;
     font-size: 20px;
