@@ -304,6 +304,7 @@ footer
     width: 100%;
     margin: 30px 0 80px 0;
     flex-direction: column; 
+    position: relative;
 }
 .foot-details .key-words
 {
@@ -331,5 +332,33 @@ footer
     font-size: 20px;
     margin: 5px 0;
     color: #8d8d91;
+}
+}
+@media screen and (max-width:560px)
+{
+    .pro-image img
+    {
+        height: 250px;
+        width: 250px;
+    }
+    .user-rev-txt
+{
+    width: 98%;
+    font-size: 20px;
+    margin: 5px 0;
+    color: #8d8d91;
+}
+.img-box .side
+{
+    height: 300px;
+    width: 200px;
+    transform:rotateX(45deg);
+    filter: drop-shadow(10px 30px 4px #464649);
+}
+.img-box .front
+{
+    height: 200px;
+    width: 200px;
+    
 }
 }
