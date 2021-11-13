@@ -8,21 +8,19 @@
     <title>Nova</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 
 <body>
-    <!-- <div class="layout">
-        <div class="txt"></div>
-        <div class="img"></div>
-    </div> -->
     <div class="pro-intro">
         <div class="pro-details">
             <div class="brand-name">
                 <p><span>Brand</span>Name</p>
             </div>
             <div class="key-words">
-                <h6 class="catg">Lorem, ipsum dolor.</h6>
-                <h2 class="catg-head">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                <h6 class="catg"> Special Promotion</h6>
+                <h2 class="catg-head">What's your special promotion ?</h2>
                 <p class="catg-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ipsa! Ratione,
                     laboriosam.</p>
             </div>
@@ -35,30 +33,31 @@
         </div>
     </div>
     <div class="showcase">
-        <div class="lft-img-cont">
-            <div class="txt-box">
+        <div  class="lft-img-cont" >
+            <div class="txt-box" data-aos="fade-left">
                 <div class="key-words">
-                    <h6 class="catg">Lorem, ipsum dolor.</h6>
-                    <h2 class="catg-head">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    <h6 class="catg">showcase</h6>
+                    <h2 class="catg-head">Describe what's being promoted</h2>
                     <p class="catg-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ipsa! Ratione,
                         laboriosam.</p>
                 </div>
             </div>
-            <div class="img-box">
+            <div class="img-box" data-aos="fade-right">
                 <img src="headset.png" class="side" alt="headphone" srcset="">
             </div>
         </div>
         <hr>
-        <div class="rgt-img-cont">
-            <div class="txt-box">
+        <div class="hr-line"></div>
+        <div class="rgt-img-cont" >
+            <div class="txt-box" data-aos="fade-right">
                 <div class="key-words">
-                    <h6 class="catg">Lorem, ipsum dolor.</h6>
-                    <h2 class="catg-head">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    <h6 class="catg">showcase</h6>
+                    <h2 class="catg-head">Add more detail about what's being promoted</h2>
                     <p class="catg-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ipsa! Ratione,
                         laboriosam.</p>
                 </div>
             </div>
-            <div class="img-box">
+            <div class="img-box" data-aos="fade-left">
                 <img src="headset.png" class="front" alt="headphone" srcset="">
             </div>
         </div>
@@ -74,24 +73,32 @@
         </div>
     </div>
     <div class="benefits">
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-right"
+     data-aos-offset="450"
+     data-aos-easing="ease-in-sine">
             <div class="ben-ico"><i class="fas fa-guitar"></i></div>
-            <div class="ben-heading"><h3>Lorem, ipsum dolor.</h3></div>
+            <div class="ben-heading"><h3>Benefit One</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
         </div>
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-right"
+     data-aos-offset="400"
+     data-aos-easing="ease-in-sine">
             <div class="ben-ico"><i class="far fa-star"></i></div>
-            <div class="ben-heading"><h3>Lorem, ipsum dolor.</h3></div>
+            <div class="ben-heading"><h3>Benefit Two</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
         </div>
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-right"
+     data-aos-offset="350"
+     data-aos-easing="ease-in-sine">
             <div class="ben-ico"><i class="fas fa-glass-cheers"></i></div>
-            <div class="ben-heading"><h3>Lorem, ipsum dolor.</h3></div>
+            <div class="ben-heading"><h3>Benefit Three</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
         </div>
-        <div class="benefit">
+        <div class="benefit" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
             <div class="ben-ico"><i class="fab fa-raspberry-pi"></i></div>
-            <div class="ben-heading"><h3>Lorem, ipsum dolor.</h3></div>
+            <div class="ben-heading"><h3>Benefit Four</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
         </div>
         
@@ -115,8 +122,8 @@
     <footer>
         <div class="foot-details">
             <div class="key-words">
-                <h6 class="catg">Lorem, ipsum dolor.</h6>
-                <h2 class="catg-head">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                <h6 class="catg">special promotion</h6>
+                <h2 class="catg-head">What's your main value proposition ? </h2>
                 <p class="catg-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ipsa! Ratione,
                     laboriosam.</p>
             </div>
@@ -129,5 +136,9 @@
         </div>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 
 </html>
