@@ -151,8 +151,6 @@ input[type=button]
 .img-box
 {
     height: 100%;
-    width: 500px;
-    min-width: 400px;
     display: grid;
     place-items: center;
     perspective: 800px;
@@ -322,7 +320,19 @@ footer
         height: 350px;
         width: 350px;
     }
+    .lft-img-cont
+{
     
+    width: 100%;
+    margin: 0;    
+}
+.rgt-img-cont
+{
+    width: 100%;
+    margin:  0 ;
+    
+   
+}
     .user-rev-txt p
 {
     width: 98%;
@@ -351,12 +361,28 @@ footer
         height: 250px;
         width: 250px;
     }
+    .lft-img-cont
+    {
+        
+        width: 100%;
+        margin: 0;    
+    }
+    .rgt-img-cont
+    {
+        width: 100%;
+        margin:  0 ;
+        
+       
+    }
     .user-rev-txt p
 {
     width: 98%;
     font-size: 20px;
     margin: 5px 0;
     color: #8d8d91;
+}
+.catg{
+font-size: 8px;
 }
 .img-box .side
 {
@@ -370,5 +396,13 @@ footer
     height: 200px;
     width: 200px;
     
+}
+.key-words .catg-para
+{
+    width: 80%;
+}
+.copyright
+{
+    padding: 10px 0;
 }
 }
