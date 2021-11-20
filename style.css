@@ -192,16 +192,19 @@ input[type=button]
     justify-content: center;
     align-items: center;
     padding: 20px 0px;
-    overflow: scroll;
+    flex-wrap: wrap;
     width: 100%;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 .company
 {
-    padding: 15px 30px;
+   height: 50px;
+   display: grid;
+   place-items: center;
+   width: 150px;
     background-color: #ddd9d9;
-    margin: 0 5px;
+    margin: 5px;
 }
 .benefits
 {
@@ -315,6 +318,7 @@ footer
     {
         overflow-x: hidden;
     }
+  
     .pro-image img
     {
         height: 350px;
