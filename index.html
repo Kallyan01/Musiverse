@@ -13,10 +13,32 @@
 </head>
 
 <body>
-    <div class="pro-intro">
+    <div id="top"></div>
+    <nav class="navbar" id="nav" >
+        <div class="navmenu">
+            <li class="active">Home</li>
+            <li>About Us</li>
+            <li>Help</li>
+            <li>Contact Us</li>
+            <li>Shop</li>
+        </div>
+        <div class="burger-menu">
+            <div class="menuico" id="bug-btn">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+    <a href="#top">
+        <div id="up">
+            UP
+        </div>
+    </a>
+    <div class="pro-intro" id="intro">
         <div class="pro-details">
             <div class="brand-name">
-                <p><span>Brand</span>Name</p>
+                <p><span>Musi</span>Verse</p>
             </div>
             <div class="key-words">
                 <h6 class="catg"> Special Promotion</h6>
@@ -25,7 +47,9 @@
                     laboriosam.</p>
             </div>
             <div class="buy-now">
-                <input type="button" value="Primary CTA">
+               <a href="#cpy">
+                   <input type="button" value="Primary CTA">
+               </a>
             </div>
         </div>
         <div class="pro-image">
@@ -34,7 +58,7 @@
     </div>
     <div class="showcase">
         <div  class="lft-img-cont" >
-            <div class="txt-box" data-aos="fade-left">
+            <div class="txt-box">
                 <div class="key-words">
                     <h6 class="catg">showcase</h6>
                     <h2 class="catg-head">Describe what's being promoted</h2>
@@ -42,14 +66,14 @@
                         laboriosam.</p>
                 </div>
             </div>
-            <div class="img-box" data-aos="fade-right">
+            <div class="img-box" >
                 <img src="headset.webp" class="side" alt="headphone" srcset="">
             </div>
         </div>
         <hr>
         <div class="hr-line"></div>
         <div class="rgt-img-cont" >
-            <div class="txt-box" data-aos="fade-right">
+            <div class="txt-box" >
                 <div class="key-words">
                     <h6 class="catg">showcase</h6>
                     <h2 class="catg-head">Add more detail about what's being promoted</h2>
@@ -57,46 +81,29 @@
                         laboriosam.</p>
                 </div>
             </div>
-            <div class="img-box" data-aos="fade-left">
+            <div class="img-box">
                 <img src="headset.webp" class="front" alt="headphone" srcset="">
             </div>
         </div>
     </div>
-    <div class="trusted">
-        <h6 class="catg">Trusted By</h6>
-        <div class="company-list">
-            <div class="company">Google</div>
-            <div class="company">Facebook</div>
-            <div class="company">Twitter</div>
-            <div class="company">Microsoft</div>
-            <div class="company">DigitalOcean</div>
-        </div>
-    </div>
+    
     <div class="benefits">
-        <div class="benefit" data-aos="fade-right"
-     data-aos-offset="450"
-     data-aos-easing="ease-in-sine">
+        <div class="benefit" >
             <div class="ben-ico"><i class="fas fa-guitar"></i></div>
             <div class="ben-heading"><h3>Benefit One</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
         </div>
-        <div class="benefit" data-aos="fade-right"
-     data-aos-offset="400"
-     data-aos-easing="ease-in-sine">
+        <div class="benefit">
             <div class="ben-ico"><i class="far fa-star"></i></div>
             <div class="ben-heading"><h3>Benefit Two</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
         </div>
-        <div class="benefit" data-aos="fade-right"
-     data-aos-offset="350"
-     data-aos-easing="ease-in-sine">
+        <div class="benefit">
             <div class="ben-ico"><i class="fas fa-glass-cheers"></i></div>
             <div class="ben-heading"><h3>Benefit Three</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
         </div>
-        <div class="benefit" data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
+        <div class="benefit">
             <div class="ben-ico"><i class="fab fa-raspberry-pi"></i></div>
             <div class="ben-heading"><h3>Benefit Four</h3></div>
             <div class="ben-para"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, voluptatum?</p></div>
@@ -131,14 +138,14 @@
                 <input type="button" value="Primary CTA">
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright" id="cpy">
             <p>Copyright &copy 2021.All rights reserved. </p>
         </div>
     </footer>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+ <script>
     AOS.init();
   </script>
-
+<script src="script.js"></script>
 </html>

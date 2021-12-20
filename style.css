@@ -6,8 +6,58 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html
+{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #FBFBFB;
+overflow-x:hidden ;
+}
+.navbar
+{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 10vh;
+    background-color: #1e1e1e33;
+    backdrop-filter: blur(8px);
+    backdrop-filter: bright;
+    padding: 10px 0;
+    z-index: 100;
+    transition: all .1s ease-in-out;
+}
+#up
+{
+    background-color:hsl(235deg 53% 55%) ;
+    height: 4.2em;
+    width: 4.2em;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    color: #fff;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+    transform-origin: center;
+    transition: all .8s ease-in-out;
+}
+.navmenu
+{
+    float: right;
+}
+.navbar li
+{
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.navbar .active
+{
+    background: hsl(235deg 53% 55%);
+    color: #fff;
+    border-radius: 10px;
 }
 .pro-intro
 {
@@ -18,13 +68,16 @@ body{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 70px 10px;
+    padding: 100px 0px;
+    /* background-color: red; */
 }
 .pro-details
 {
     height: 100%;
     width: 700px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     /* background-color: red; */
 }
@@ -113,7 +166,7 @@ input[type=button]
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    width: 80%;
+    width: 100%;
     margin: 3% 0;    
 }
 .hr-line
@@ -144,13 +197,15 @@ input[type=button]
 .txt-box
 {
     height: 100%;
-    width: 100%;
+    width: 50%;
     display: grid;
     place-items: center;
 }
 .img-box
 {
+    
     height: 100%;
+    width: 50%;
     display: grid;
     place-items: center;
     perspective: 800px;
@@ -314,10 +369,7 @@ footer
 
 @media screen and (max-width:760px)
 {
-    body
-    {
-        overflow-x: hidden;
-    }
+  
     .company
 {
    height: 50px;
@@ -326,7 +378,84 @@ footer
    width: auto;
    padding: 5px;
     background-color: #ddd9d9;
+    margin: 2px;
+}
+.navbar
+{
+    position: fixed;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-290px);
+    background-color: hsl(300deg 20% 93%);
+    
+    
+}
+.navmenu
+{
+    float: none;
+   text-align: center;
+   
+}
+.navbar li
+{
+    
+    display: block;
+    
+}
+.burger-menu{
+   
+    height: 10%;
+    width: 100%;
+}
+.menuico
+{
+    float: right;
+    margin: 0 10px;
+}
+.menuico div
+{
+    height: 3px;
     margin: 5px;
+    width: 25px;
+    background-color: hsl(235deg 53% 55%) ;
+}
+.company-list
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.key-words
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.buy-now
+{
+    width: 100%; 
+    padding: 10px;
+}
+
+.txt-box
+{
+    height: 100%;
+    width: 100%;
+}
+.img-box
+{
+    height: 100%;
+    width:  100%;
+    
 }
   
     .pro-image img
@@ -340,6 +469,7 @@ footer
     width: 100%;
     margin: 0;    
 }
+
 .rgt-img-cont
 {
     width: 100%;
@@ -361,19 +491,37 @@ footer
     align-items: center;
     text-align: center;
     margin: 10px 0;
+    padding: 10px;
 }
+
 
 .pro-details
 {
+    width: 100%;
     margin: 0 0 20px 0;
 }
-}
-@media screen and (max-width:560px)
-{
+.pro-image
+    {
+        height: 250px;
+        width: auto;
+    }
     .pro-image img
     {
         height: 250px;
-        width: 250px;
+        width: auto;
+    }
+}
+@media screen and (max-width:570px)
+{
+    .pro-image
+    {
+        height: 250px;
+        width: auto;
+    }
+    .pro-image img
+    {
+        height: 250px;
+        width: auto;
     }
     .lft-img-cont
     {
@@ -419,4 +567,30 @@ font-size: 8px;
 {
     padding: 10px 0;
 }
+}
+@media screen and (max-width:670px) {
+
+    .pro-intro
+    {
+
+        padding: 10px 0px;
+        
+    }
+}
+@media screen and (max-width:570px){
+    .navbar
+{
+    position: fixed;
+    height: 50vh;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-230px);
+    background-color: hsl(300deg 20% 93%);
+    
+    
+}
+    
 }
